@@ -1,50 +1,157 @@
-<!DOCTYPE html>    
+<!DOCTYPE html>
 
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomePage</title>
 
-<link rel="stylesheet" href="./CSS/homepage.css">
-<link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/homepage.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="./CSS/all.css" />
 
-<!-- Bootstrap CSS -->
-<link href="./css/bootstrap.css" rel="stylesheet" >
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header-image" style="height: 70vh">
+      <nav
+        class="d-flex justify-content-between align-items-center border-bottom"
+      >
+        <h1>Cui'zine</h1>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Acceuil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Equipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-</head>
-<body>
-    <header class="header-image" style="height: 70vh" >
-        <nav class="d-flex justify-content-between align-items-center border-bottom">
-            <h1>Cui'zine</h1>
-            <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Acceuil</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Equipe</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-        </nav>
-        
-        <div class="container d-flex flex-column align-items-center mt-5">
-            <img class="" src="/digitous-html-cuisine/img/logo_square_white.png" style="width:150px; height:auto">
-            <h1>
-                cui'zine
-            </h1>
-            <h2>
-                La mag cuisine
-            </h2>
-        </div>
+      <div class="container d-flex flex-column align-items-center mt-5">
+        <img
+          class=""
+          src="/digitous-html-cuisine/img/logo_square_white.png"
+          style="width: 150px; height: auto"
+        />
+        <h1>cui'zine</h1>
+        <h2>La mag cuisine</h2>
+      </div>
     </header>
 
-    <script src="./css/bootstrap.bundle.js"></script>    
-</body>
+    <!-- MAIN -->
+
+    <main>
+      <!-- TITLE -->
+
+      <h1 class="container d-flex justify-content-center">Derniers articles</h1>
+
+
+      <div class="container d-flex flex-direction-row">
+        
+        <!-- IMG & TEXT -->
+        
+        <div class="">
+          <div class="d-flex">
+            <img
+              class="w-25 p-3"
+              src="/digitous-html-cuisine/img/articles/suzette/suzette-small.jpg"
+              alt="crêpes"
+              style="height: 175px;"
+            />
+            <div class="">
+              <h2>Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h2>
+              <p>
+                La franchise "Chez Suzette" qui fait un carton chez les bretons
+                ouvre son premier restaurant à Paris dans le quartier latin.
+                Antoine de Cui'zine a testé pour vous les saveurs sucrées,
+                salées au froment ou au sarrazin!
+              </p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <img
+              class="w-25 p-3"
+              src="/digitous-html-cuisine/img/articles/metro/metro-small.jpg"
+              alt="Framboises"
+              style="height: 175px;"
+            />
+            <div class="">
+              <h2>Le Métro dessert</h2>
+              <p>
+                Germain est ferrovipathe (ndlr: fan de train), son fils Maxime
+                est pâtissier. Ils ont décidé de réunir leur deux passions dans
+                un restaurant à la déco inspiré du métro parisien. A voir
+                absolument, mais qu'en est-il d'y aller pour manger ? Clémentine
+                entre en gare et nous donne son avis
+              </p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <img
+              class="w-25 p-3"
+              src="/digitous-html-cuisine/img/articles/vitaly/vitaly-small.jpg"
+              alt="Pâtes Italienne"
+              style="height: 175px;"
+            />
+            <div class="">
+              <h2>Vitaly, le végan italien</h2>
+              <p>
+                Quand on pense italien, on pense lasagne et jambon de Parme. Ils
+                l'ont fait, les saveurs de l'Italie à portée des herbivores.
+                Cette fois, c'est moi Tony qui vais le tester pour vous.
+              </p>
+            </div>
+          </div>
+          <a href="#"><< Voir les articles précédents</a>
+        </div>
+
+        <!-- FORM & ICONS -->
+
+        <div class="">
+          <form class="">
+            <div class="row">
+              <label for="exampleInputEmail1" class="form-label">Recherche</label>
+              <input
+                type="email"
+                class="form-control"
+                aria-describedby="emailHelp"
+                placeholder="Recherche"
+              />
+            </div>
+            <button type="submit" class="w-100 btn btn-primary ">Ok</button>
+            <div class="row">
+              <label for="exampleInputPassword1" class="form-label"
+                >Newsletter</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Votre Votre mot de passe"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary ">Envoyer</button>
+          </form>
+
+          <h4></h4>
+          <div class="d-flex flex-direction-row">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./css/bootstrap.bundle.js"></script>
+  </body>
 </html>
