@@ -52,22 +52,21 @@
     <main>
       <!-- TITLE -->
 
-      <h1 class="container d-flex justify-content-center">Derniers articles</h1>
+      <h1 class="container d-flex justify-content-center my-4">
+        Derniers articles
+      </h1>
 
-
-      <div class="container d-flex flex-direction-row">
-        
+      <div class="container d-flex flex-direction-row" style="height: 800px">
         <!-- IMG & TEXT -->
-        
+
         <div class="">
-          <div class="d-flex">
+          <div class="d-flex h-25">
             <img
-              class="w-25 p-3"
+              class="p-3 img-fluid"
               src="/digitous-html-cuisine/img/articles/suzette/suzette-small.jpg"
               alt="crêpes"
-              style="height: 175px;"
             />
-            <div class="">
+            <div class="mt-4">
               <h2>Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h2>
               <p>
                 La franchise "Chez Suzette" qui fait un carton chez les bretons
@@ -77,14 +76,13 @@
               </p>
             </div>
           </div>
-          <div class="d-flex">
+          <div class="d-flex h-25">
             <img
-              class="w-25 p-3"
+              class="p-3"
               src="/digitous-html-cuisine/img/articles/metro/metro-small.jpg"
               alt="Framboises"
-              style="height: 175px;"
             />
-            <div class="">
+            <div class="mt-4">
               <h2>Le Métro dessert</h2>
               <p>
                 Germain est ferrovipathe (ndlr: fan de train), son fils Maxime
@@ -95,14 +93,13 @@
               </p>
             </div>
           </div>
-          <div class="d-flex">
+          <div class="d-flex h-25">
             <img
-              class="w-25 p-3"
+              class="p-3"
               src="/digitous-html-cuisine/img/articles/vitaly/vitaly-small.jpg"
               alt="Pâtes Italienne"
-              style="height: 175px;"
             />
-            <div class="">
+            <div class="mt-4">
               <h2>Vitaly, le végan italien</h2>
               <p>
                 Quand on pense italien, on pense lasagne et jambon de Parme. Ils
@@ -111,25 +108,29 @@
               </p>
             </div>
           </div>
-          <a href="#"><< Voir les articles précédents</a>
+          <div class="d-flex h-25 mt-4">
+            <a href="#"> Voir les articles précédents</a>
+          </div>
         </div>
 
         <!-- FORM & ICONS -->
 
-        <div class="">
-          <form class="">
+        <div class="container w-50">
+          <form class="container">
             <div class="row">
-              <label for="exampleInputEmail1" class="form-label">Recherche</label>
+              <label for="exampleInputEmail1" class="form-label my-4"
+                >Recherche</label
+              >
               <input
                 type="email"
                 class="form-control"
                 aria-describedby="emailHelp"
                 placeholder="Recherche"
               />
+              <button type="submit" class="w-100 btn btn-primary">Ok</button>
             </div>
-            <button type="submit" class="w-100 btn btn-primary ">Ok</button>
             <div class="row">
-              <label for="exampleInputPassword1" class="form-label"
+              <label for="exampleInputPassword1" class="form-label my-4"
                 >Newsletter</label
               >
               <input
@@ -137,11 +138,13 @@
                 class="form-control"
                 placeholder="Votre Votre mot de passe"
               />
+              <button type="submit" class="w-100 btn btn-primary">
+                Envoyer
+              </button>
             </div>
-            <button type="submit" class="btn btn-primary ">Envoyer</button>
           </form>
 
-          <h4></h4>
+          <h4>Partager</h4>
           <div class="d-flex flex-direction-row">
             <i class="fab fa-facebook-square"></i>
             <i class="fab fa-instagram"></i>
@@ -151,6 +154,73 @@
         </div>
       </div>
     </main>
+
+    <footer class="bg-dark text-white">
+      <div
+        class="
+          d-flex
+          flex-direction-row
+          justify-content-between
+          p-5
+          container
+          align-items-center
+        "
+      >
+        <div class="col-3">
+          <h2>Catégories</h2>
+          <ul>
+            <li>
+              <a>Revues</a>
+            </li>
+            <li>
+              <a>Recettes</a>
+            </li>
+            <li>
+              <a>Découvertes</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h2>Archives</h2>
+          <ul>
+            <li>
+              <a>2019</a>
+            </li>
+            <li>
+              <a>2018</a>
+            </li>
+            <li>
+              <a>2017</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <form>
+            <label for="exampleInputEmail1" class="form-label my-4"
+              >Newslettre</label
+            >
+            <div class="d-flex">
+              <input
+                type="email"
+                class="form-control"
+                aria-describedby="emailHelp"
+                placeholder="Email..."
+              />
+              <button type="S'inscrire" class="btn btn-primary w-50">Ok</button>
+            </div>
+          </form>
+          <div>
+            <h4>Partager</h4>
+            <div class="d-flex flex-direction-row">
+              <i class="fab fa-facebook-square text-dark bg-light p-2 m-1"></i>
+              <i class="fab fa-instagram text-dark bg-light p-2 m-1"></i>
+              <i class="fab fa-youtube text-dark bg-light p-2 m-1"></i>
+              <i class="fab fa-twitter text-dark bg-light p-2 m-1"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="./css/bootstrap.bundle.js"></script>
   </body>
