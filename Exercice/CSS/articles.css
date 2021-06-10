@@ -1,0 +1,12 @@
+.header-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.527)),
+    url("/digitous-html-cuisine/img/articles/suzette/suzette-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav-opacity {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.527)),
+    url("/digitous-html-cuisine/img/articles/suzette/suzette-header.jpg");
+}
