@@ -5,3 +5,41 @@
 .img-rounded {
   border-radius: 50%;
 }
+
+.oswald,
+input,
+li,
+p,
+button
+{
+  font-family: 'Oswald', sans-serif;
+}
+
+.oswald-light {
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+}
+
+.oswald-bold {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
+
+p{
+  color:grey;
+}
+
+.courgette,
+h1,
+h2,
+h3,
+h4,
+label{
+  font-family: 'Courgette', cursive;
+}
+
+ul{
+  list-style-type: none;
+}
+
+

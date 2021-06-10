@@ -13,30 +13,37 @@
 
     <!-- Bootstrap CSS -->
     <link href="./css/bootstrap.css" rel="stylesheet" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Oswald&display=swap" rel="stylesheet"> 
+    
   </head>
   <body>
     <header class="header-image" style="height: 70vh">
       <nav
-        class="d-flex justify-content-between align-items-center border-bottom"
-      >
-        <h1>Cui'zine</h1>
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Acceuil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Equipe</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      class="d-flex justify-content-between align-items-center border-bottom"
+    >
+      <h1 class="text-white my-3">Cui'zine</h1>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="#">Acceuil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Equipe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-      <div class="container d-flex flex-column align-items-center mt-5">
+      <div class="container d-flex flex-column align-items-center mt-5 text-white">
         <img
           class=""
           src="/digitous-html-cuisine/img/logo_square_white.png"
@@ -105,7 +112,7 @@
         <div class="container w-50">
           <form class="container">
             <div class="row">
-              <label for="exampleInputEmail1" class="form-label my-4"
+              <label for="exampleInputEmail1" class="form-label mt-4"
                 >Recherche</label
               >
               <input
@@ -114,30 +121,31 @@
                 aria-describedby="emailHelp"
                 placeholder="Recherche"
               />
-              <button type="submit" class="w-100 btn btn-primary">Ok</button>
+              <button type="submit" class="w-100 btn border border-dark oswald-bold">
+                Ok
+              </button>
             </div>
             <div class="row">
-              <label for="exampleInputPassword1" class="form-label my-4"
+              <label for="exampleInputPassword1" class="form-label mt-4"
                 >Newsletter</label
               >
               <input
                 type="password"
                 class="form-control"
-                placeholder="Votre Votre mot de passe"
+                placeholder="Votre mot de passe"
               />
-              <button type="submit" class="w-100 btn btn-primary">
+              <button type="submit" class="w-100 btn border border-dark oswald-bold">
                 Envoyer
               </button>
             </div>
+            <label class="form-label mt-4">Partager</label>
+            <div class="d-flex flex-direction-row">
+              <i class="fab fa-facebook-square m-3"></i>
+              <i class="fab fa-instagram m-3"></i>
+              <i class="fab fa-youtube m-3"></i>
+              <i class="fab fa-twitter m-3"></i>
+            </div>
           </form>
-
-          <h4>Partager</h4>
-          <div class="d-flex flex-direction-row">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-twitter"></i>
-          </div>
         </div>
       </div>
 
@@ -250,13 +258,13 @@
           <h2>Catégories</h2>
           <ul>
             <li>
-              <a>Revues</a>
+              <a><u>Revues</u></a>
             </li>
             <li>
-              <a>Recettes</a>
+              <a><u>Recettes</u></a>
             </li>
             <li>
-              <a>Découvertes</a>
+              <a><u>Découvertes</u></a>
             </li>
           </ul>
         </div>
@@ -264,20 +272,20 @@
           <h2>Archives</h2>
           <ul>
             <li>
-              <a>2019</a>
+              <a><u>2019</u></a>
             </li>
             <li>
-              <a>2018</a>
+              <a><u>2018</u></a>
             </li>
             <li>
-              <a>2017</a>
+              <a><u>2017</u></a>
             </li>
           </ul>
         </div>
         <div class="col-3">
           <form>
-            <label for="exampleInputEmail1" class="form-label my-4"
-              >Newslettre</label
+            <label for="exampleInputEmail1" class="form-label mt-4"
+              >Newsletter</label
             >
             <div class="d-flex">
               <input
@@ -286,11 +294,11 @@
                 aria-describedby="emailHelp"
                 placeholder="Email..."
               />
-              <button type="S'inscrire" class="btn btn-primary w-50">Ok</button>
+              <button type="button" class="btn w-50 text-white oswald-bold border border-white">S'inscrire</button>
             </div>
           </form>
           <div>
-            <h4>Partager</h4>
+            <label class="form-label mt-4">Partager</label>
             <div class="d-flex flex-direction-row">
               <i class="fab fa-facebook-square text-dark bg-light p-2 m-1"></i>
               <i class="fab fa-instagram text-dark bg-light p-2 m-1"></i>
